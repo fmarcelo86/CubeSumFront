@@ -13,7 +13,7 @@ export class CommandComponent implements OnInit {
   opResponse;
 
   ngOnInit() {
-    this.cmdRequest = "Felix";
+    this.cmdRequest = "";
     this.opResponse = "";
   }
 
