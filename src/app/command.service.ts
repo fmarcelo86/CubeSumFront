@@ -19,7 +19,7 @@ export class CommandService {
   }
 
   public process(cmdRequest): Observable<any> {
-    return this.httpClient.post('https://cube-sum-service.herokuapp.com/CubeSumService/process', cmdRequest, {responseType: 'text'})
+    return this.httpClient.post('https://cube-sum-service-win.azurewebsites.net/CubeSumService/process', cmdRequest, {responseType: 'text'})
     .pipe(
       retry(1),
       catchError(this.errorHandl)
